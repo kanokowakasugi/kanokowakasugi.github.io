@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css?v=2">
 </head>
 <body>
 
@@ -31,14 +31,8 @@
     <h1>Works</h1>
   </div>
 
-  <div class="placeholder">
-    <span class="eyebrow">In progress</span>
-    <p>This page is being put together. In the meantime, here's the kind of work I do:</p>
-    <ul>
-      <li>SNS planning &amp; direction</li>
-      <li>Landing page &amp; product page production</li>
-      <li>Video editing</li>
-    </ul>
+  <div class="typewriter-wrap">
+    <span id="typewriter"></span><span class="cursor">|</span>
   </div>
 
 </main>
@@ -47,6 +41,20 @@
   <span>&copy; 2026 kanoko wakasugi</span>
   <span><a href="../contact/index.html">Get in touch</a></span>
 </footer>
+
+<script>
+  const text = "in progress";
+  const el = document.getElementById('typewriter');
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 110);
+    }
+  }
+  type();
+</script>
 
 </body>
 </html>
