@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kanoko Wakasugi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="brand">kanoko wakasugi</span>
+  <nav class="site-nav">
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="../works/index.html">Works</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../contact/index.html" class="is-active">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="page-title">
+    <h1>Contact</h1>
+  </div>
+
+  <p class="contact-email">
+    <a href="mailto:kanokowakasugi@gmail.com" id="email-link">kanokowakasugi@gmail.com</a>
+    <span class="copy-note" id="copy-note"></span>
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 kanoko wakasugi</span>
+  <span><a href="../index.html">Back home</a></span>
+</footer>
+
+<script>
+  const link = document.getElementById('email-link');
+  const note = document.getElementById('copy-note');
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const email = link.textContent.trim();
+    navigator.clipboard.writeText(email).then(function () {
+      note.textContent = 'Copied';
+      setTimeout(function () { note.textContent = ''; }, 1500);
+    });
+  });
+</script>
+
+</body>
+</html>
