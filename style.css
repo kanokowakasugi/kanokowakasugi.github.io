@@ -80,7 +80,7 @@ h1, h2, h3 {
   padding: var(--space-m) var(--space-m) 0;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: var(--space-s);
 }
@@ -160,7 +160,8 @@ h1, h2, h3 {
     display: flex;
     position: absolute;
     right: var(--space-m);
-    top: var(--space-m);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .site-nav {
@@ -180,6 +181,11 @@ h1, h2, h3 {
 
   .site-nav.is-open {
     display: flex;
+  }
+
+  .site-nav .icon-row {
+    display: flex;
+    margin-top: var(--space-s);
   }
 }
 
@@ -280,6 +286,11 @@ h1, h2, h3 {
   gap: var(--space-m);
 }
 
+/* ナビ内に複製したアイコン行は、モバイルでメニューを開いた時だけ表示 */
+.site-nav .icon-row {
+  display: none;
+}
+
 .icon-row a {
   display: inline-flex;
   align-items: center;
@@ -333,6 +344,9 @@ h1, h2, h3 {
 .about-block p,
 .about-block ul {
   margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.8;
 }
 
 .about-block ul {
@@ -386,7 +400,7 @@ h1, h2, h3 {
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-l) var(--space-m) var(--space-m);
+  padding: var(--space-l) var(--space-xs) var(--space-m);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
