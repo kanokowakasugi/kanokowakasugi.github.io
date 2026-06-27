@@ -197,7 +197,7 @@ h1, h2, h3 {
   .menu-toggle {
     display: flex;
     position: fixed;
-    top: 33px;
+    top: 39px;
     right: 24px;
     z-index: 101;
   }
@@ -209,7 +209,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 8.5rem var(--space-m) var(--space-l);
+    padding: 4.5rem var(--space-m) var(--space-l);
     background: var(--ivory);
     z-index: 100;
   }
@@ -220,7 +220,7 @@ h1, h2, h3 {
 
   .nav-menu-brand {
     font-family: 'Lora', serif;
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 600;
     color: var(--ink);
     opacity: 0.82;
