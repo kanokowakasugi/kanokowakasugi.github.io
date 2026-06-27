@@ -16,7 +16,10 @@
 
 <header class="site-header">
   <span class="brand">kanoko wakasugi</span>
-  <nav class="site-nav">
+  <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
     <a href="../index.html">Home</a>
     <a href="../about/index.html" class="is-active">About</a>
     <a href="../works/index.html">Works</a>
@@ -54,6 +57,16 @@
   <span>&copy; 2026 kanoko wakasugi</span>
   <span><a href="../contact/index.html">Get in touch</a></span>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const siteNav = document.getElementById('site-nav');
+  menuToggle.addEventListener('click', function () {
+    const isOpen = siteNav.classList.toggle('is-open');
+    menuToggle.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
 
 </body>
 </html>
