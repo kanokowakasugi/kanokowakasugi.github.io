@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css?v=2">
+<link rel="stylesheet" href="../style.css?v=3">
 </head>
 <body>
 
@@ -20,7 +20,6 @@
     <a href="../index.html">Home</a>
     <a href="../about/index.html">About</a>
     <a href="../works/index.html">Works</a>
-    <a href="../blog.html">Blog</a>
     <a href="../contact/index.html" class="is-active">Contact</a>
   </nav>
 </header>
@@ -32,8 +31,7 @@
   </div>
 
   <p class="contact-email">
-    <a href="mailto:kanokowakasugi@gmail.com" id="email-link">kanokowakasugi@gmail.com</a>
-    <span class="copy-note" id="copy-note"></span>
+    <a href="mailto:kanokowakasugi@gmail.com">kanokowakasugi@gmail.com</a>
   </p>
 
 </main>
@@ -42,19 +40,6 @@
   <span>&copy; 2026 kanoko wakasugi</span>
   <span><a href="../index.html">Back home</a></span>
 </footer>
-
-<script>
-  const link = document.getElementById('email-link');
-  const note = document.getElementById('copy-note');
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const email = link.textContent.trim();
-    navigator.clipboard.writeText(email).then(function () {
-      note.textContent = 'Copied';
-      setTimeout(function () { note.textContent = ''; }, 1500);
-    });
-  });
-</script>
 
 </body>
 </html>
