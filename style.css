@@ -220,7 +220,7 @@ h1, h2, h3 {
 
   .nav-menu-brand {
     font-family: 'Lora', serif;
-    font-size: 15px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--ink);
     opacity: 0.82;
@@ -228,7 +228,7 @@ h1, h2, h3 {
   }
 
   .site-nav a {
-    font-size: 1.1rem;
+    font-size: 15px;
     margin: 0.75em 0;
   }
 
