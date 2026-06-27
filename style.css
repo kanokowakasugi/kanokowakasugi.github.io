@@ -119,6 +119,7 @@ h1, h2, h3 {
   color: var(--ink);
   opacity: 0.45;
   border-bottom: none;
+  letter-spacing: 0.06em;
 }
 
 .site-nav a.is-active,
@@ -474,6 +475,7 @@ border-bottom: none;
   display: block;
   text-align: center;
   font-size: 9px;
+  letter-spacing: 0.06em;
   color: var(--ink);
   flex-shrink: 0;
 }
