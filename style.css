@@ -229,22 +229,28 @@ h1, h2, h3 {
     display: flex;
   }
 
+.site-header .brand,
 .nav-menu-brand {
-font-family: 'Lora', serif;
-font-size: 1.2rem;
-font-weight: 600;
-color: var(--ink) !important;
-opacity: 0.82 !important;
-margin-bottom: 35px;
-border-bottom: none;
-text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  opacity: 0.82;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.nav-menu-brand {
+  display: block;
+  margin-bottom: 35px;
 }
 
 .nav-menu-brand:hover,
 .nav-menu-brand:focus-visible {
-color: var(--ink) !important;
-opacity: 0.82 !important;
-border-bottom: none;
+  color: var(--ink);
+  opacity: 0.82;
+  border-bottom: none;
 }
 
   .site-nav a {
