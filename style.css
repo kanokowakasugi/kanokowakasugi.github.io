@@ -166,27 +166,23 @@ h1, h2, h3 {
 
 @media (max-width: 680px) {
   .site-header {
-    display: grid;
-    grid-template-columns: 24px 1fr 24px;
-    align-items: center;
-    column-gap: var(--space-s);
-  }
-
-  .site-header .brand {
-    grid-column: 2;
+    display: block;
     text-align: center;
   }
 
-  .header-spacer {
+  .site-header .brand {
     display: block;
-    grid-column: 1;
+  }
+
+  .header-spacer {
+    display: none;
   }
 
   .menu-toggle {
     display: flex;
-    grid-column: 3;
-    justify-self: end;
-    position: relative;
+    position: fixed;
+    top: 30px;
+    right: 24px;
     z-index: 101;
   }
 
