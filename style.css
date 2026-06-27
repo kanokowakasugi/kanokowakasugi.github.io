@@ -484,7 +484,7 @@ h1, h2, h3 {
 }
 /* Home限定:アイコン行との余白を詰める */
 .site-footer--home {
-  padding-top: var(--space-m);
+  padding-top: 0.02rem;
 }
 
 .site-footer a {
