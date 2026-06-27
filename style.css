@@ -181,9 +181,19 @@ h1, h2, h3 {
 }
 
 @media (max-width: 680px) {
+  .wrap {
+    padding-top: 6rem;
+  }
+
   .site-header {
     display: block;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--ivory);
+    z-index: 90;
   }
 
   .site-header .brand {
