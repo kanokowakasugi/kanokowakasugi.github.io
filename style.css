@@ -482,6 +482,10 @@ h1, h2, h3 {
   color: var(--ink);
   flex-shrink: 0;
 }
+/* Home限定:アイコン行との余白を詰める */
+.site-footer--home {
+  padding-top: var(--space-m);
+}
 
 .site-footer a {
   color: var(--ink);
