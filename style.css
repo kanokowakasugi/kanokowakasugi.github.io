@@ -228,14 +228,23 @@ h1, h2, h3 {
     display: flex;
   }
 
-  .nav-menu-brand {
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--ink);
-    opacity: 0.82;
-    margin-bottom: 35px;
-  }
+.nav-menu-brand {
+font-family: 'Lora', serif;
+font-size: 1.2rem;
+font-weight: 600;
+color: var(--ink) !important;
+opacity: 0.82 !important;
+margin-bottom: 35px;
+border-bottom: none;
+text-decoration: none;
+}
+
+.nav-menu-brand:hover,
+.nav-menu-brand:focus-visible {
+color: var(--ink) !important;
+opacity: 0.82 !important;
+border-bottom: none;
+}
 
   .site-nav a {
     font-size: 15px;
