@@ -447,6 +447,7 @@ h1, h2, h3 {
   font-size: 14px;
   color: var(--ink);
   border-bottom: none;
+  letter-spacing: 0.02em;
 }
 
 .contact-email a:hover {
