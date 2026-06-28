@@ -87,22 +87,12 @@ h1, h2, h3 {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--space-m) var(--space-m) 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-s);
+  text-align: center;
 }
 
 .site-header .brand {
-  font-family: 'Lora', serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-  opacity: 0.82;
-  border-bottom: none;
-  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .header-spacer {
@@ -111,6 +101,7 @@ h1, h2, h3 {
 
 .site-nav {
   display: flex;
+  justify-content: center;
   gap: var(--space-m);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
