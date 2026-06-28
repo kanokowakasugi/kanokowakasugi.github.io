@@ -93,6 +93,14 @@ h1, h2, h3 {
 .site-header .brand {
   display: block;
   margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  opacity: 0.82;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 .header-spacer {
