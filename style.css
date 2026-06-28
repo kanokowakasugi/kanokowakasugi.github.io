@@ -507,18 +507,24 @@ h1, h2, h3 {
   .wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    flex: 1;
-    padding-top: 4rem;
+  }
+
+  .hero .tagline {
+    margin-top: 2rem;
   }
 
   .icon-row {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .site-footer {
+    padding-top: 1rem;
   }
 
   .moodboard {
