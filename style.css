@@ -87,12 +87,14 @@ h1, h2, h3 {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--space-m) var(--space-m) 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-s);
 }
 
 .site-header .brand {
-  display: block;
-  margin-bottom: 1rem;
   font-family: 'Lora', serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -102,14 +104,12 @@ h1, h2, h3 {
   border-bottom: none;
   text-decoration: none;
 }
-
 .header-spacer {
   display: none;
 }
 
 .site-nav {
   display: flex;
-  justify-content: center;
   gap: var(--space-m);
   font-size: 0.85rem;
   letter-spacing: 0.03em;
