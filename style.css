@@ -200,10 +200,6 @@ h1, h2, h3 {
     display: block;
   }
 
-  .header-spacer {
-    display: none;
-  }
-
   .menu-toggle {
     display: flex;
     position: fixed;
